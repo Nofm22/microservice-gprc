@@ -1,7 +1,7 @@
 import { Controller, Inject } from '@nestjs/common';
 import { GrpcMethod } from '@nestjs/microservices';
-import { LoginRequestDto, RegisterRequestDto, ValidateRequestDto } from './auth.dto';
-import { AUTH_SERVICE_NAME, RegisterResponse, LoginResponse, ValidateResponse } from './auth.pb';
+import { RegisterRequestDto } from './auth.dto';
+import { AUTH_SERVICE_NAME, RegisterResponse } from './auth.pb';
 import { AuthService } from './service/auth.service';
 
 @Controller()
