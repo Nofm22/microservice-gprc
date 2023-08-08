@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  api-gateway:
+    build: 
+      context: ../api-gateway
+      dockerfile: Dockerfile
+    container_name: api-gateway
+    ports:
+      - "3000:3000"
+    networks:
+      - my_network
+  auth: 
+    build: 
+      context: ../auth 
+      dockerfile: Dockerfile 
+    container_name: auth
+    networks:
+      - my_network
+
+networks:
+  my_network:
+    driver: bridge
