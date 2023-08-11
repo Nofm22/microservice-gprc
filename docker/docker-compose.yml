@@ -12,12 +12,14 @@ services:
       - my_network
   auth: 
     build: 
-      context: ../auth 
+      context: ../auth
       dockerfile: Dockerfile 
     container_name: auth
+    ports:
+      - "50051:50051"
     networks:
       - my_network
 
 networks:
   my_network:
-    driver: bridge
+    name: shared_network
