@@ -1,0 +1,7 @@
+{
+  "java.project.sourcePaths": [
+    "ptnminh/src/main/java/com/tutorial/demo",
+    "demo/src/main/java/com/demo/config"
+  ],
+  "maven.view": "hierarchical"
+}
