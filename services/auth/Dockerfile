@@ -8,7 +8,8 @@ COPY package*.json ./
 COPY ./src/prisma ./prisma/
 
 # Install app dependencies
-RUN npm install
+RUN npm install && npm run proto:install & npm run proto:auth
+
 
 COPY . .
 
@@ -20,4 +21,8 @@ COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/package*.json ./
 COPY --from=builder /app/dist ./dist
 
-CMD [ "npm", "run", "start:prod" ]
+
+# 👇 copy prisma directory
+COPY --from=builder /app/prisma ./prisma
+
+CMD [  "npm", "run", "start:migrate:prod" ]
