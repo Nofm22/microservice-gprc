@@ -1,7 +1,6 @@
 import { INestMicroservice, ValidationPipe } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { Transport } from '@nestjs/microservices';
-import { join } from 'path';
 import { AppModule } from './app.module';
 import { HttpExceptionFilter } from './auth/filter/http-exception.filter';
 import { protobufPackage } from './auth/auth.pb';
@@ -12,7 +11,7 @@ async function bootstrap() {
     options: {
       url: '0.0.0.0:50051',
       package: protobufPackage,
-      protoPath: join('node_modules/grpc-nest-proto/proto/auth.proto'),
+      protoPath: 'node_modules/gitRepo/proto/auth.proto',
     },
   });
 

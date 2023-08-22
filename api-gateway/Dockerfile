@@ -8,8 +8,7 @@ COPY package*.json ./
 
 
 # Install app dependencies
-RUN npm install && npm run proto:install & npm run proto:auth
-
+RUN npm install
 
 COPY . .
 

@@ -4,6 +4,7 @@ import { AuthController } from './auth.controller';
 import { AUTH_SERVICE_NAME, AUTH_PACKAGE_NAME } from './auth.pb';
 import { AuthService } from './auth.service';
 import { ConfigModule, ConfigService } from '@nestjs/config';
+import { join } from 'path';
 @Global()
 @Module({
   imports: [
@@ -29,7 +30,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
           options: {
             url: config.get<string>('AUTH_CLIENT_URL'),
             package: AUTH_PACKAGE_NAME,
-            protoPath: 'node_modules/grpc-nest-proto/proto/auth.proto',
+            protoPath: 'node_modules/gitRepo/proto/auth.proto',
           },
         }),
         inject: [ConfigService],
