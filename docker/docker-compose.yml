@@ -11,7 +11,7 @@ services:
     networks:
       - my_network
     env_file:
-      - .env
+      - ../api-gateway/.env
   auth: 
     build: 
       context: ../services/auth
@@ -22,7 +22,7 @@ services:
     networks:
       - my_network
     env_file:
-      - .env
+      - ../services/auth/.env
     depends_on:
       - postgres
 

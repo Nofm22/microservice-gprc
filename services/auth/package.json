@@ -35,9 +35,9 @@
     "@prisma/client": "^4.11.0",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",
-    "gitRepo": "git+https://github.com/ptnminh/grpc-nest-proto.git",
     "reflect-metadata": "^0.1.13",
-    "rxjs": "^7.2.0"
+    "rxjs": "^7.2.0",
+    "gitRepo": "git+https://github.com/ptnminh/grpc-nest-proto.git"
   },
   "devDependencies": {
     "@nestjs/cli": "^9.0.0",

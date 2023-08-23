@@ -4,6 +4,7 @@ import { Transport } from '@nestjs/microservices';
 import { AppModule } from './app.module';
 import { HttpExceptionFilter } from './auth/filter/http-exception.filter';
 import { protobufPackage } from './auth/auth.pb';
+import { join } from 'path';
 
 async function bootstrap() {
   const app: INestMicroservice = await NestFactory.createMicroservice(AppModule, {
@@ -11,7 +12,8 @@ async function bootstrap() {
     options: {
       url: '0.0.0.0:50051',
       package: protobufPackage,
-      protoPath: 'node_modules/gitRepo/proto/auth.proto',
+      protoPath: join(__dirname, './auth.proto'),
+      // protoPath: 'node_modules/gitRepo/proto/auth.proto',
     },
   });
 
