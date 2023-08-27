@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "dgSpecHash": "srpfBLhWur4RBhKGaZpPD+XtczTPwqGRF3P1B+uNMTWyk+caHIRZSVlA1GZ9uB6RCcUzSR65Jssvaimhs4O4qA==",
+  "success": true,
+  "projectFilePath": "F:\\ASP\\grpc-asp.net\\GrpcGreeter\\GrpcGreeter.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ACER\\.nuget\\packages\\google.protobuf\\3.24.2\\google.protobuf.3.24.2.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\grpc.aspnetcore\\2.49.0\\grpc.aspnetcore.2.49.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\grpc.aspnetcore.server\\2.49.0\\grpc.aspnetcore.server.2.49.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\grpc.aspnetcore.server.clientfactory\\2.49.0\\grpc.aspnetcore.server.clientfactory.2.49.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\grpc.core.api\\2.56.0\\grpc.core.api.2.56.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\grpc.net.client\\2.56.0\\grpc.net.client.2.56.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\grpc.net.clientfactory\\2.49.0\\grpc.net.clientfactory.2.49.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\grpc.net.common\\2.56.0\\grpc.net.common.2.56.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\grpc.tools\\2.57.0\\grpc.tools.2.57.0.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.extensions.configuration\\3.0.3\\microsoft.extensions.configuration.3.0.3.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.0.3\\microsoft.extensions.configuration.abstractions.3.0.3.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.0.3\\microsoft.extensions.configuration.binder.3.0.3.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.0.3\\microsoft.extensions.dependencyinjection.3.0.3.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.0.3\\microsoft.extensions.dependencyinjection.abstractions.3.0.3.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.extensions.http\\3.0.3\\microsoft.extensions.http.3.0.3.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.extensions.logging\\3.0.3\\microsoft.extensions.logging.3.0.3.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.0.3\\microsoft.extensions.logging.abstractions.3.0.3.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.extensions.options\\3.0.3\\microsoft.extensions.options.3.0.3.nupkg.sha512",
+    "C:\\Users\\ACER\\.nuget\\packages\\microsoft.extensions.primitives\\3.0.3\\microsoft.extensions.primitives.3.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

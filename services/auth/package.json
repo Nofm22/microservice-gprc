@@ -29,15 +29,18 @@
     "@grpc/grpc-js": "^1.9.0",
     "@grpc/proto-loader": "^0.7.8",
     "@nestjs/common": "^9.0.0",
+    "@nestjs/config": "^3.0.0",
     "@nestjs/core": "^9.0.0",
     "@nestjs/microservices": "^9.4.3",
     "@nestjs/platform-express": "^9.0.0",
     "@prisma/client": "^4.11.0",
+    "amqp-connection-manager": "^4.1.14",
+    "amqplib": "^0.10.3",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",
+    "gitRepo": "git+https://github.com/ptnminh/grpc-nest-proto.git",
     "reflect-metadata": "^0.1.13",
-    "rxjs": "^7.2.0",
-    "gitRepo": "git+https://github.com/ptnminh/grpc-nest-proto.git"
+    "rxjs": "^7.2.0"
   },
   "devDependencies": {
     "@nestjs/cli": "^9.0.0",

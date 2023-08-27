@@ -1,9 +1,19 @@
 ### 
 
-POST http://localhost:3000/auth/register HTTP/1.1
+POST http://localhost:5193/todoitems
 content-type: application/json
 
 {
-    "email": "hihi@gmail.com",
-    "password": "lolminhga67"
+    "id": 1,
+    "Name": "ptnminh",
+    "IsComplete": true
+}
+
+
+### 
+POST http://localhost:3000/greet/sayHello
+content-type: application/json
+
+{
+   "name": "ptnminh"
 }
