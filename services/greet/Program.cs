@@ -1,7 +1,7 @@
+using GrpcGreeter;
 using GrpcGreeter.Data;
-using GrpcGreeter.Services;
 using Microsoft.EntityFrameworkCore;
-
+using GrpcGreeter.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 // Additional configuration is required to successfully run gRPC on macOS.
@@ -22,7 +22,7 @@ builder.Services.AddDbContextPool<ApplicationDbContext>(options => options.UseMy
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-app.MapGrpcService<GreeterService>();
+app.MapGrpcService<ProductBaseService>();
 app.MapGet("/", () => "Communication with gRPC endpoints must be made through a gRPC client. To learn how to create a client, visit: https://go.microsoft.com/fwlink/?linkid=2086909");
 
 app.Run();

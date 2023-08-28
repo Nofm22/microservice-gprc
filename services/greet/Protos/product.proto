@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcGreeter";
+
+
+package product;
+
+service ProductService {
+    rpc CreateProduct (CreateProductRequest) returns (CreateProductResponse);
+}
+
+
+message CreateProductRequest {
+    string ProductName = 1;
+    optional int32 Quantity = 2;
+}
+
+message CreateProductResponse {
+    string status = 1;
+    string error = 2;
+}
