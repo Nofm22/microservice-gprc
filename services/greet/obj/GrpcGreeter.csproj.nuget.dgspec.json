@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\ASP\\grpc-asp.net\\GrpcGreeter\\GrpcGreeter.csproj": {}
+    "F:\\grpc-microservice\\services\\greet\\GrpcGreeter.csproj": {}
   },
   "projects": {
-    "F:\\ASP\\grpc-asp.net\\GrpcGreeter\\GrpcGreeter.csproj": {
+    "F:\\grpc-microservice\\services\\greet\\GrpcGreeter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\ASP\\grpc-asp.net\\GrpcGreeter\\GrpcGreeter.csproj",
+        "projectUniqueName": "F:\\grpc-microservice\\services\\greet\\GrpcGreeter.csproj",
         "projectName": "GrpcGreeter",
-        "projectPath": "F:\\ASP\\grpc-asp.net\\GrpcGreeter\\GrpcGreeter.csproj",
+        "projectPath": "F:\\grpc-microservice\\services\\greet\\GrpcGreeter.csproj",
         "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-        "outputPath": "F:\\ASP\\grpc-asp.net\\GrpcGreeter\\obj\\",
+        "outputPath": "F:\\grpc-microservice\\services\\greet\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -55,6 +55,20 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.57.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Mysql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [
