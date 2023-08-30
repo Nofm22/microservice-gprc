@@ -1,7 +1,6 @@
 using Grpc.Core;
 using GrpcGreeter.Data;
 using GrpcGreeter.Models;
-using Microsoft.AspNetCore.Mvc;
 
 namespace GrpcGreeter.Services;
 public class ProductBaseService : ProductService.ProductServiceBase
@@ -29,7 +28,7 @@ public class ProductBaseService : ProductService.ProductServiceBase
             var response = new CreateProductResponse
             {
                 Status = "Success",
-                Error = "none"
+                Error = null
             };
 
             return response;
@@ -38,13 +37,11 @@ public class ProductBaseService : ProductService.ProductServiceBase
         {
             var response = new CreateProductResponse
             {
-                Status = "Success",
+                Status = "Error",
                 Error = e.Message
             };
 
             return response;
-
-
         }
 
 

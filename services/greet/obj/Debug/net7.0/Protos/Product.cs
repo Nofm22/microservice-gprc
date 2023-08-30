@@ -26,16 +26,16 @@ namespace GrpcGreeter {
           string.Concat(
             "ChRQcm90b3MvcHJvZHVjdC5wcm90bxIHcHJvZHVjdCJPChRDcmVhdGVQcm9k",
             "dWN0UmVxdWVzdBITCgtQcm9kdWN0TmFtZRgBIAEoCRIVCghRdWFudGl0eRgC",
-            "IAEoBUgAiAEBQgsKCV9RdWFudGl0eSI2ChVDcmVhdGVQcm9kdWN0UmVzcG9u",
-            "c2USDgoGc3RhdHVzGAEgASgJEg0KBWVycm9yGAIgASgJMmAKDlByb2R1Y3RT",
-            "ZXJ2aWNlEk4KDUNyZWF0ZVByb2R1Y3QSHS5wcm9kdWN0LkNyZWF0ZVByb2R1",
-            "Y3RSZXF1ZXN0Gh4ucHJvZHVjdC5DcmVhdGVQcm9kdWN0UmVzcG9uc2VCDqoC",
-            "C0dycGNHcmVldGVyYgZwcm90bzM="));
+            "IAEoBUgAiAEBQgsKCV9RdWFudGl0eSJFChVDcmVhdGVQcm9kdWN0UmVzcG9u",
+            "c2USDgoGc3RhdHVzGAEgASgJEhIKBWVycm9yGAIgASgJSACIAQFCCAoGX2Vy",
+            "cm9yMmAKDlByb2R1Y3RTZXJ2aWNlEk4KDUNyZWF0ZVByb2R1Y3QSHS5wcm9k",
+            "dWN0LkNyZWF0ZVByb2R1Y3RSZXF1ZXN0Gh4ucHJvZHVjdC5DcmVhdGVQcm9k",
+            "dWN0UmVzcG9uc2VCDqoCC0dycGNHcmVldGVyYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::GrpcGreeter.CreateProductRequest), global::GrpcGreeter.CreateProductRequest.Parser, new[]{ "ProductName", "Quantity" }, new[]{ "Quantity" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcGreeter.CreateProductResponse), global::GrpcGreeter.CreateProductResponse.Parser, new[]{ "Status", "Error" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::GrpcGreeter.CreateProductResponse), global::GrpcGreeter.CreateProductResponse.Parser, new[]{ "Status", "Error" }, new[]{ "Error" }, null, null, null)
           }));
     }
     #endregion
@@ -344,14 +344,28 @@ namespace GrpcGreeter {
 
     /// <summary>Field number for the "error" field.</summary>
     public const int ErrorFieldNumber = 2;
-    private string error_ = "";
+    private readonly static string ErrorDefaultValue = "";
+
+    private string error_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public string Error {
-      get { return error_; }
+      get { return error_ ?? ErrorDefaultValue; }
       set {
         error_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
+    }
+    /// <summary>Gets whether the "error" field is set</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasError {
+      get { return error_ != null; }
+    }
+    /// <summary>Clears the value of the "error" field</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void ClearError() {
+      error_ = null;
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -379,7 +393,7 @@ namespace GrpcGreeter {
     public override int GetHashCode() {
       int hash = 1;
       if (Status.Length != 0) hash ^= Status.GetHashCode();
-      if (Error.Length != 0) hash ^= Error.GetHashCode();
+      if (HasError) hash ^= Error.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -402,7 +416,7 @@ namespace GrpcGreeter {
         output.WriteRawTag(10);
         output.WriteString(Status);
       }
-      if (Error.Length != 0) {
+      if (HasError) {
         output.WriteRawTag(18);
         output.WriteString(Error);
       }
@@ -420,7 +434,7 @@ namespace GrpcGreeter {
         output.WriteRawTag(10);
         output.WriteString(Status);
       }
-      if (Error.Length != 0) {
+      if (HasError) {
         output.WriteRawTag(18);
         output.WriteString(Error);
       }
@@ -437,7 +451,7 @@ namespace GrpcGreeter {
       if (Status.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Status);
       }
-      if (Error.Length != 0) {
+      if (HasError) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Error);
       }
       if (_unknownFields != null) {
@@ -455,7 +469,7 @@ namespace GrpcGreeter {
       if (other.Status.Length != 0) {
         Status = other.Status;
       }
-      if (other.Error.Length != 0) {
+      if (other.HasError) {
         Error = other.Error;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);

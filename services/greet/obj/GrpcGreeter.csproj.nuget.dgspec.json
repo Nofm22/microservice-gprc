@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\grpc-microservice\\services\\greet\\GrpcGreeter.csproj": {}
+    "f:\\grpc-microservice\\services\\greet\\GrpcGreeter.csproj": {}
   },
   "projects": {
-    "F:\\grpc-microservice\\services\\greet\\GrpcGreeter.csproj": {
+    "f:\\grpc-microservice\\services\\greet\\GrpcGreeter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\grpc-microservice\\services\\greet\\GrpcGreeter.csproj",
+        "projectUniqueName": "f:\\grpc-microservice\\services\\greet\\GrpcGreeter.csproj",
         "projectName": "GrpcGreeter",
-        "projectPath": "F:\\grpc-microservice\\services\\greet\\GrpcGreeter.csproj",
+        "projectPath": "f:\\grpc-microservice\\services\\greet\\GrpcGreeter.csproj",
         "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-        "outputPath": "F:\\grpc-microservice\\services\\greet\\obj\\",
+        "outputPath": "f:\\grpc-microservice\\services\\greet\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config"

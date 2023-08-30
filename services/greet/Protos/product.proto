@@ -17,5 +17,5 @@ message CreateProductRequest {
 
 message CreateProductResponse {
     string status = 1;
-    string error = 2;
+    optional string error = 2;
 }

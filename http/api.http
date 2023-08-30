@@ -17,3 +17,11 @@ content-type: application/json
 {
    "name": "ptnminh"
 }
+
+### 
+POST http://localhost:3000/notification
+content-type: application/json
+
+{
+   "desc": "ptnminh"
+}
